@@ -1,0 +1,86 @@
+.WrapperFilter {
+  position: absolute;
+  bottom: 0;
+  z-index: 9999;
+  max-height: 400px;
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+  padding: 20px 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+   filter: drop-shadow(0px 15px 15px rgba(233, 64, 87, 0.20));
+  border-top:10px solid #e94057;
+}
+.WrapperFilter h1{
+    font-size: 35px;
+    color: #e94057;
+}
+
+.WrapperFilter .Header{
+    display: flex;
+    justify-content: space-between;
+    color: #e94057;
+}
+
+.DragProgress {
+  position: relative;
+  height: 10px;
+  background-color: #f7b9c1;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.ProgressBar {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e94057;
+  border-radius: 20px;
+}
+
+.DraggableHandle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: -10px;
+
+  background-color: #fff;
+
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+  border: 2px solid #f7b9c1;
+}
+
+.DraggableHandle2 {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  border: 2px solid #f7b9c1;
+
+}
+
+.DraggableHandle:hover {
+  background-color: #cd5f6e;
+}
+
+
+.WrapperFilter button{
+    background-color: #e94057;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+}

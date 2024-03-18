@@ -1,0 +1,21 @@
+.detailsWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.detailsForm div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.detailsForm div input {
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+.detailsForm div textarea {
+	padding: 10px 20px;
+}

@@ -1,0 +1,45 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.signup  h1{
+  color: #E94057;
+  font-size: 25px;
+}
+.signup .inputBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  input {
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+}
+.swiper-pagination-bullet {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Color of non-active pagination bullets */
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(159, 13, 13); /* Color of the active pagination bullet */
+}
+
+.swiper-pagination {
+  align-self: center;
+  height: 20px;
+  margin-bottom: 15px;
+  background-color: aquamarine;
+  z-index: 20;
+}

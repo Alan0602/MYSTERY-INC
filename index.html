@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dating App</title>
+
+        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta
+            name="Dating app"
+            content="Dating app"
+        />
+		<meta name="theme-color" content="#000000" />
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                        .register("./serviceWorker.js")
+                        .then((reg) => {
+                            console.log("Worker Registered");
+                        })
+                        .catch((err) => {
+                            console.log(
+                                "Error in service worker registration."
+                            );
+                        });
+                });
+            }
+        </script>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>

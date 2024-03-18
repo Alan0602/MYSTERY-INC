@@ -1,0 +1,17 @@
+.verifyWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 30px;
+}
+
+.verifyWrapper button {
+  width: 100%;
+  background-color: #e94057;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}

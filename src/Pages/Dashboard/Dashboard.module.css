@@ -1,0 +1,37 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: calc(100vh - 50px );
+}
+.Wrapper button {
+  background-color: rgb(248, 248, 248);
+  border-radius: 50%;
+  filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.07));
+  padding: 10px;
+  aspect-ratio: 1 / 1;
+  border: none;
+}
+
+.Wrapper .TopNav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.Wrapper .TopNav button {
+  height: 30px;
+}
+
+.Wrapper .TopNav h1 {
+  font-size: 35px;
+}
+
+
+.Wrapper .buttonWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}

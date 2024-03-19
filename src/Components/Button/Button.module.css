@@ -1,0 +1,26 @@
+.button {
+  color: white;
+
+  border-radius: 99px;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button.Dark {
+  background-color: #ffffff;
+}
+
+.button.Light {
+  background-color: #ffffff;
+}
+
+.button.Outline {
+  font-size: 18px;
+  background: var(
+    --Grad,
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    linear-gradient(129deg, #8e0042 0%, #e30069 57.77%)
+  );
+}

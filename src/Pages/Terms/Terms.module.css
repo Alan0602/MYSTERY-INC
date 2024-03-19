@@ -1,0 +1,14 @@
+.Wrapper {
+  width: 100%;
+  height: 100%;
+  background: url('./Start.png')center center/contain no-repeat;
+}
+
+.Wrapper a {
+  background-color: white;
+  padding: 10px 40px;
+  color: #e30069;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+}

@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
-/* figma link :  https://www.figma.com/file/pObekhsqK8sJ2xZ7xjQZku/Dating-APP-Template?type=design&node-id=354-764&mode=design&t=gW8XCm4DM8Ig7NAt-0*/
 :root {
-  font-family: "Raleway", sans-serif;
+  font-family: "MyFont";
+  src: local("MyFont"), url("./fonts/Komika-Sans-DEMO.otf") format("woff");
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,7 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(158, 124, 124);
+  background-color: #e30069;
 }
 
 * {
@@ -20,20 +19,20 @@
   padding: 0;
   border: none;
 }
-
+@font-face {
+  font-family: "Komika";
+  src: local("Komika"), url("./fonts/Komika-Sans-DEMO.otf") format("truetype");
+  font-weight: 100;
+}
 body {
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
 
-  min-width: 320px;
-  height: 100vh;
+  min-width: 300px;
+  max-width: 480px;
+  min-height: 100vh;
   width: 100%;
-  max-width: 500px;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: "Komika";
 }
 
 ::-webkit-scrollbar {
@@ -44,4 +43,8 @@ h1 {
 
 button {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }

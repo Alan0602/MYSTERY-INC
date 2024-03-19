@@ -1,38 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dating App</title>
 
-        <link rel="apple-touch-icon" href="/logo192.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta
-            name="Dating app"
-            content="Dating app"
-        />
-		<meta name="theme-color" content="#000000" />
-    </head>
-    <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div>
-        <script>
-            if ("serviceWorker" in navigator) {
-                window.addEventListener("load", () => {
-                    navigator.serviceWorker
-                        .register("./serviceWorker.js")
-                        .then((reg) => {
-                            console.log("Worker Registered");
-                        })
-                        .catch((err) => {
-                            console.log(
-                                "Error in service worker registration."
-                            );
-                        });
-                });
+<head>
+    <link rel="icon" href="/logoDes.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#e30069" />
+    <meta name="TresureHunt" content="TresureHunt For CCE" />
+    <link rel="apple-touch-icon" href="/logoDes.png" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <title>Treasur Hunt</title>
+    <style>
+        #overlay {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 50%;
+            background-color: #e30069;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 9999;
+            left: 50%;
+            gap: 10px;
+            padding: 10%;
+            transform: translate(-50%, -50%);
+        }
+
+        #overlay::-webkit-scrollbar {
+            display: none;
+            color: white;
+        }
+
+        #overlay img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footing {
+            display: flex;
+            gap: 15px;
+        }
+
+        #overlay .footing>.designathon {
+            width: 50px;
+        }
+
+        #overlay .footing>.cross {
+            width: 20px;
+            object-fit: contain;
+        }
+
+        #overlay .footing>.advaya {
+            width: 50px;
+        }
+
+        .overwidth {
+            display: none;
+        }
+
+        @media screen and (min-width:500px) {
+            #root {
+                display: none;
             }
-        </script>
-        <script type="module" src="/src/main.tsx"></script>
-    </body>
+
+            .overwidth {
+                display: block;
+                text-align: center;
+                margin: auto;
+                place-items: center;
+                height: 100%;
+                margin-top: 45vh;
+            }
+        }
+    </style>
+    <script>
+        $(window).load(function () {
+            $("#overlay").hide();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="overlay">
+        <img src="/Barcode.png" alt="" />
+
+        <img src="/logoDes.png" alt="" />
+
+        <div class="footing">
+            <img class="designathon" src="/DesignathonLogo.png" alt="" /><img class="cross" src="/Cross.png"
+                alt="" /><img class="advaya" src="/AdvayaLogo.png" alt="" />
+        </div>
+    </div>
+    <div id="root"></div>
+    <div class="overwidth">Use your mobiles to use the application</div>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("./serviceWorker.js")
+                    .then((reg) => {
+                        console.log("Worker Registered");
+                    })
+                    .catch((err) => {
+                        console.log(
+                            "Error in service worker registration."
+                        );
+                    });
+            });
+        }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

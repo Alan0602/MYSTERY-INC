@@ -1,0 +1,24 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 0.5rem;
+}
+
+.stars {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.star {
+    cursor: pointer;
+    padding: 0 10px;
+    color: #aaa;
+}
+
+.star.selected {
+    color: gold;
+}

@@ -1,21 +1,25 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
-import { NotFound } from "./Pages/NotFound/NotFound";
-import { Signup } from "./Pages/Registration/Signup";
-import { Login } from "./Pages/Registration/Login";
-import { Dashboard } from "./Pages/Dashboard/Dashboard";
-import { Matches } from "./Pages/Matches/Matches";
-import { Message } from "./Pages/Message/Message";
-import { Profile } from "./Pages/GuestPage/Profile";
-import { GuestPage } from "./Pages/GuestPage/GuestPage";
-import { MatchFound } from "./Pages/Matches/MatchFound";
-import Verify from "./Pages/Registration/pages/Verify";
-import Details from "./Pages/Registration/pages/Details";
+import { Home } from "./Pages/Home/Home";
+import NotFound from "./Pages/NotFound/NotFount";
+import { Login } from "./Pages/Register/Login";
+import { SignUp } from "./Pages/Register/SignUp";
+
+import { PrivateRoute } from "./services/PrivateRoutes";
 import { Toaster } from "react-hot-toast";
-import { PrivateRoute } from "./services/PrivateRoute";
+import Verify from "./Pages/Register/Verify";
+import Welcome from "./Pages/Welcome";
+import { Landing } from "./Pages/Landing/Landing";
+import { Terms } from "./Pages/Terms/Terms";
+
+import { ClueOne } from "./Pages/Clues/ClueOne";
+import { Fake } from "./Pages/Fake/Fake";
+import { ClueTwo } from "./Pages/Clues/ClueTwo";
+import { ClueThree } from "./Pages/Clues/ClueThree";
+import { ClueFour } from "./Pages/Clues/ClueFour";
+import { ClueFive } from "./Pages/Clues/ClueFive";
+import { ClueSix } from "./Pages/Clues/ClueSix";
+import { SuccessPage } from "./Pages/Clues/SuccessPage";
 
 function App() {
     const router = createBrowserRouter([
@@ -28,71 +32,85 @@ function App() {
             element: <NotFound />,
         },
         {
-            path: "/verify",
-            element: <Verify />,
-        },
-        {
-            path: "/details",
-            element: <Details />,
-        },
-        {
-            path: "/signup",
-            element: <Signup />,
+            path: "/landing",
+            element: <Landing />,
         },
         {
             path: "/login",
             element: <Login />,
         },
         {
+            path: "/signup",
+            element: <SignUp />,
+        },
+        {
+            path: "/verify",
+            element: <Verify />,
+        },
+        {
+            path: "/welcome",
+            element: <Welcome />,
+        },
+        {
+            path: "/terms",
+            element: <Terms />,
+        },
+      
+
+        {
             path: "/",
             element: <PrivateRoute />,
             children: [
                 {
                     path: "/",
-					element: <Dashboard />,
+                    element: <Home />,
                 },
                 {
-					path: "/profile",
-					element: <Profile />,
+                    path: "/2563",
+                    element: <Fake />,
                 },
-                // {
-                //     path: "/",
-                //     element: <RoleChecker allowedRoles={[Roles.ADMIN]} />,
-                //     children: [
-                //         {
-                //             path: "/payment-status",
-                //             element: <Admin />,
-                //         },
-                //         {
-                //             path: "/payment-status/:id",
-                //             element: <PaymentStatus />,
-                //         },
-                //     ],
-                // },
-            ],
-        },
+                {
+                    path: "/25638",
+                    element: <ClueOne />,
+                },
+                {
+                    path: "/45856",
+                    element: <ClueTwo />,
+                },
 
-        {
-            path: "/match",
-            element: <Matches />,
-        },
-        {
-            path: "/message",
-            element: <Message />,
-        },
-        {
-            path: "/guestpage",
-            element: <GuestPage />,
-        },
-        {
-            path: "/matchfound",
-            element: <MatchFound />,
+                {
+                    path: "/22258963",
+                    element: <ClueThree />,
+                },
+                {
+                    path: "/1012578",
+                    element: <ClueFour />,
+                },
+                {
+                    path: "/30125789653",
+                    element: <ClueFive />,
+                },
+                {
+                    path: "/253",
+                    element: <ClueSix />,
+                },
+                {
+                    path: "/sucessreached",
+                    element: <SuccessPage />,
+                },
+            ],
         },
     ]);
     return (
         <>
-            <Toaster position="bottom-center" reverseOrder={false} />
-            <RouterProvider router={router} />;
+            <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+                toastOptions={{
+                    duration: 5000,
+                }}
+            />
+            <RouterProvider router={router} />
         </>
     );
 }

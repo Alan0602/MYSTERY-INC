@@ -65,7 +65,7 @@ const QRScanner = () => {
       if (error) {
         throw error.message;
       } else if (clue) {
-        setCurrentProgress(clue[0].progress || 0);
+        setCurrentProgress(clue[0]?.progress! || 0);
       }
     }
   };
@@ -85,7 +85,8 @@ const QRScanner = () => {
       if (error) {
         throw error.message;
       } else if (clue) {
-        if (clue.length === 0) {
+		  if (clue.length === 0) {
+			console.log("Creating new clue");
           if (num === "25638") {
             const { data: newClue, error: insertError } = await supabase
               .from("clue")

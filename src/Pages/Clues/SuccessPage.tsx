@@ -39,8 +39,8 @@ export const SuccessPage = () => {
   }, []);
 
   return (
-    <div className={styles.Clue7}>
-      <a href="tel:+91 94007 43624">Call</a>
-    </div>
+		<div className={styles.Clue7}>
+			<a href="tel:+91 79091 37548">Call</a>
+		</div>
   );
 };

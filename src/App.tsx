@@ -10,8 +10,6 @@ import { Toaster } from "react-hot-toast";
 import Verify from "./Pages/Register/Verify";
 import Welcome from "./Pages/Welcome";
 import { Landing } from "./Pages/Landing/Landing";
-import { Terms } from "./Pages/Terms/Terms";
-
 import { ClueOne } from "./Pages/Clues/ClueOne";
 import { Fake } from "./Pages/Fake/Fake";
 import { ClueTwo } from "./Pages/Clues/ClueTwo";
@@ -51,11 +49,6 @@ function App() {
             path: "/welcome",
             element: <Welcome />,
         },
-        {
-            path: "/terms",
-            element: <Terms />,
-        },
-      
 
         {
             path: "/",

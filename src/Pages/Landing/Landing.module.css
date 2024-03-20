@@ -33,14 +33,14 @@
   background: var(
     --Grad,
     linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-    linear-gradient(129deg, #8e0042 0%, #e30069 57.77%)
+    linear-gradient(129deg, #3d3d3d 0%, #a4a4a4 57.77%)
   );
 }
 .BottomWrap > div > .Decoration {
   background-color: white !important;
 }
 .BottomWrap .Decoration p {
-  background: var(--Grad, linear-gradient(129deg, #8e0042 0%, #e30069 57.77%));
+  background: var(--Grad, linear-gradient(129deg, #393939 0%, #b4b2b3 57.77%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

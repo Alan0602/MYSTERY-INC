@@ -3,18 +3,18 @@
     "name": "Treasure Hunt for SNGIST",
     "icons": [
         {
-            "src": "logoDes.png",
+            "src": "skull.svg",
             "sizes": "64x64 32x32 24x24 16x16",
             "type": "image/x-icon"
         },
         {
-            "src": "logoDes.png",
+            "src": "skull.svg",
             "type": "image/png",
             "sizes": "192x192",
             "purpose": "any maskable"
         },
         {
-            "src": "logoDes.png",
+            "src": "skull.svg",
             "type": "image/png",
             "sizes": "512x512"
         }

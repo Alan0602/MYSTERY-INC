@@ -105,9 +105,9 @@ export const Login = (_props: Props) => {
 					</div>
 					{data.passwordError && <p>{data.passwordError}</p>}
 
-					<button className={styles.forgetpassword}>
+					{/* <button className={styles.forgetpassword}>
 						Forget Password ?
-					</button>
+					</button> */}
 				</div>
 
 				<button onClick={handleSubmit}>Log In</button>

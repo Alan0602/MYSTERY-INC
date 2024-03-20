@@ -52,7 +52,7 @@
   border-radius: 26.5px;
   background: #fff9f9;
   padding: 15px;
-  color: #8e0042;
+  color: #000000;
 }
 .InputContainerWrapper button {
   padding: 15px;
@@ -61,7 +61,7 @@
   background: var(
     --Grad,
     linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-    linear-gradient(129deg, #8e0042 0%, #e30069 57.77%)
+    linear-gradient(129deg, #545253 0%, #9c999a 57.77%)
   );
 }
 
@@ -70,7 +70,7 @@
   background: var(
     --Grad,
     linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-    linear-gradient(129deg, #8e0042 0%, #e30069 57.77%)
+    linear-gradient(129deg, #525151 0%, #c5c2c3 57.77%)
   );
   color: white;
   font-family: "Komika";
@@ -126,7 +126,7 @@
   background: var(
     --Grad,
     linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-    linear-gradient(129deg, #8e0042 0%, #e30069 57.77%)
+    linear-gradient(129deg, #585758 0%, #888687 57.77%)
   );
   color: white;
   font-family: "Komika";

@@ -16,8 +16,8 @@ const Verify = () => {
           {" "}
           <h3>Verify your Email to start playing.</h3>
           <p>
-            You will have recieved the verification mail to the Participant 1
-            Email you have provide!
+            You will have recieved the verification mail to the Team lead's
+            Email!
           </p>
         </div>
         <button

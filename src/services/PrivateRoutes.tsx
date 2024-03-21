@@ -23,6 +23,7 @@ export const PrivateRoute = () => {
 		// else if (!isEventStarted()) {
 		//   navigate("/");
 		// }
+		// alan hosting
 	}
 
 	useEffect(() => {

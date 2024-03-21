@@ -2,6 +2,11 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Register.module.css";
 import { Barcode, Logo } from "../../ExportingFile";
 
+/**
+ * Generates the verification screen layout with a button to navigate to the login page.
+ *
+ * @return {JSX.Element} The JSX element representing the verification screen.
+ */
 const Verify = () => {
   const navigate = useNavigate();
   return (
